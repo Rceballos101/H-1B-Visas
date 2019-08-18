@@ -1,0 +1,1856 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0718.1543                               -->
+<workbook original-version='18.1' source-build='2019.2.2 (20192.19.0718.1543)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='H1BVisas_15661041273350' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='H1B_Visas' inline='true' name='federated.0knq32q0x7jajb1gkkk4d0quk5mb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='H1B_Visas' name='textscan.03cnods1isz9an19pqv200yz863e'>
+            <connection class='textscan' directory='C:/Users/Reyes/OneDrive - St. John&apos;s University/Summer 2019/Python/Python/H1bVisas' filename='H1B_Visas.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.03cnods1isz9an19pqv200yz863e' name='H1B_Visas.csv' table='[H1B_Visas#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='company' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='real' name='salary' ordinal='2' />
+            <column datatype='string' name='location' ordinal='3' />
+            <column datatype='date' name='date' ordinal='4' />
+            <column datatype='integer' name='year' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[H1B_Visas.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[H1B_Visas.csv]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[H1B_Visas.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[salary]</local-name>
+            <parent-name>[H1B_Visas.csv]</parent-name>
+            <remote-alias>salary</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[H1B_Visas.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[H1B_Visas.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[H1B_Visas.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='# of H1B Visas' datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='City' datatype='string' name='[location - Split 1]' role='dimension' semantic-role='[City].[Name]' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[location]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [location], &quot;,&quot;, 1 ) )' />
+      </column>
+      <column caption='State' datatype='string' name='[location - Split 2]' role='dimension' semantic-role='[State].[Name]' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[location]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [location], &quot;,&quot;, -1 ) )' />
+      </column>
+      <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Salary' datatype='real' name='[salary]' role='measure' type='quantitative' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+      <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Company)' hidden='true' name='[Action (Company)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[company]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (DAY(Date))' hidden='true' name='[Action (DAY(Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tdy:date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Location)' hidden='true' name='[Action (Location)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[location]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (State)' hidden='true' name='[Action (State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[location - Split 2]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Year)' hidden='true' name='[Action (Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[year]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Reyes/OneDrive - St. John&apos;s University/Summer 2019/Python/Python/H1bVisas/H1B_Visas.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/18/2019 03:24:23 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='H1B_Visas' increment-value='%null%' refresh-type='create' rows-inserted='2575533' timestamp-start='2019-08-18 03:24:23.054' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company</remote-alias>
+              <ordinal>0</ordinal>
+              <family>H1B_Visas.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>86372</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>H1B_Visas.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>93096</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>salary</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>salary</remote-alias>
+              <ordinal>2</ordinal>
+              <family>H1B_Visas.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>56215</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>3</ordinal>
+              <family>H1B_Visas.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8881</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>4</ordinal>
+              <family>H1B_Visas.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2871</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>5</ordinal>
+              <family>H1B_Visas.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.535918' measure-ordering='alphabetic' measure-percentage='0.464082' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[City].[Name]' value='%null%' />
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.0knq32q0x7jajb1gkkk4d0quk5mb'>
+      <datasources>
+        <datasource caption='H1B_Visas' name='federated.0knq32q0x7jajb1gkkk4d0quk5mb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0knq32q0x7jajb1gkkk4d0quk5mb'>
+        <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+        <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:year:ok]'>
+        <groupfilter from='2015' function='range' level='[none:year:ok]' to='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Companies' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Year' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Seasonality' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Go to Careers Page' name='[Action5]'>
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Companies' />
+      <link caption='' expression='https://www.google.com/search?q=&lt;[company]&gt;+careers' />
+    </action>
+    <action caption='Find It on Google Maps' name='[Action6]'>
+      <source dashboard='Dashboard 1' type='sheet' worksheet='City' />
+      <link caption='' expression='https://www.google.com/maps/place/&lt;[location]&gt;' />
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action7]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='City' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='H1B_Visas' name='federated.0knq32q0x7jajb1gkkk4d0quk5mb' />
+    </datasources>
+    <datasource-dependencies datasource='federated.0knq32q0x7jajb1gkkk4d0quk5mb'>
+      <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='City'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>H1B Visas per City</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='H1B_Visas' name='federated.0knq32q0x7jajb1gkkk4d0quk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0knq32q0x7jajb1gkkk4d0quk5mb'>
+            <column caption='# of H1B Visas' datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[location - Split 2]' role='dimension' semantic-role='[State].[Name]' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[location]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [location], &quot;,&quot;, -1 ) )' />
+            </column>
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Company)]'>
+            <groupfilter function='level-members' level='[company]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (State)]'>
+            <groupfilter function='level-members' level='[location - Split 2]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Year)]'>
+            <groupfilter function='level-members' level='[year]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:location:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[cnt:Number of Records:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:year:ok]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Year)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (State)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Company)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:location:nk]' value='192' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#000000'>&lt;</run>
+                <run fontcolor='#000000'>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:location:nk]</run>
+                <run fontcolor='#000000'>&gt; is home to &lt;</run>
+                <run fontcolor='#000000'>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]</run>
+                <run fontcolor='#000000'>&gt; H1B Visas</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:location:nk]</rows>
+        <cols>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]</cols>
+      </table>
+      <simple-id uuid='{301CC938-F535-432B-A6D7-EACED9E82985}' />
+    </worksheet>
+    <worksheet name='Companies'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'> H1B Visas per Company</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='H1B_Visas' name='federated.0knq32q0x7jajb1gkkk4d0quk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0knq32q0x7jajb1gkkk4d0quk5mb'>
+            <column caption='# of H1B Visas' datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[company]' derivation='Count' name='[cnt:company:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[location - Split 2]' role='dimension' semantic-role='[State].[Name]' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[location]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [location], &quot;,&quot;, -1 ) )' />
+            </column>
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Location)]'>
+            <groupfilter function='level-members' level='[location]' user:ui-action-filter='[Action7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (State)]'>
+            <groupfilter function='level-members' level='[location - Split 2]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Year)]'>
+            <groupfilter function='level-members' level='[year]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:company:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[cnt:company:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Year)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:year:ok]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (State)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Location)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[cnt:Number of Records:qk]' scope='cols' value='# of H1B Visas' />
+            <format attr='display' class='0' field='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[cnt:Number of Records:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#000000'>&lt;</run>
+                <run fontcolor='#000000'>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:company:nk]</run>
+                <run fontcolor='#000000'>&gt; has sponsored &lt;</run>
+                <run fontcolor='#000000'>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[cnt:Number of Records:qk]</run>
+                <run fontcolor='#000000'>&gt; H1B Visas</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:company:nk]</rows>
+        <cols>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[cnt:Number of Records:qk]</cols>
+      </table>
+      <simple-id uuid='{8CF5125C-971F-4073-B149-1BA82B641B45}' />
+    </worksheet>
+    <worksheet name='Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='H1B_Visas' name='federated.0knq32q0x7jajb1gkkk4d0quk5mb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0knq32q0x7jajb1gkkk4d0quk5mb'>
+            <column caption='# of H1B Visas' datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[location - Split 2]' role='dimension' semantic-role='[State].[Name]' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[location]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [location], &quot;,&quot;, -1 ) )' />
+            </column>
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[location - Split 2]' derivation='None' name='[none:location - Split 2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Company)]'>
+            <groupfilter function='level-members' level='[company]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Location)]'>
+            <groupfilter function='level-members' level='[location]' user:ui-action-filter='[Action7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Year)]'>
+            <groupfilter function='level-members' level='[year]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Year)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:year:ok]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Company)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Location)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]' />
+              <lod column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:location - Split 2:nk]' />
+              <size column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#000000'>The State  of &#9;&lt;</run>
+                <run fontcolor='#000000'>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:location - Split 2:nk]</run>
+                <run fontcolor='#000000'>&gt; is home to &lt;</run>
+                <run fontcolor='#000000'>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]</run>
+                <run fontcolor='#000000'>&gt; H1B Visa Holders</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='has-halo' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Latitude (generated)]</rows>
+        <cols>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{35D9EECB-0F11-46F1-995A-8DC2C5774413}' />
+    </worksheet>
+    <worksheet name='Salary'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>Avg Salary</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='H1B_Visas' name='federated.0knq32q0x7jajb1gkkk4d0quk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0knq32q0x7jajb1gkkk4d0quk5mb'>
+            <column-instance column='[salary]' derivation='Avg' name='[avg:salary:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[location - Split 2]' role='dimension' semantic-role='[State].[Name]' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[location]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [location], &quot;,&quot;, -1 ) )' />
+            </column>
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Salary' datatype='real' name='[salary]' role='measure' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Company)]'>
+            <groupfilter function='level-members' level='[company]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Location)]'>
+            <groupfilter function='level-members' level='[location]' user:ui-action-filter='[Action7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (State)]'>
+            <groupfilter function='level-members' level='[location - Split 2]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Year)]'>
+            <groupfilter function='level-members' level='[year]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:title:nk]'>
+            <groupfilter function='level-members' level='[none:title:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:title:nk]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Year)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:year:ok]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (State)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Company)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Location)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[avg:salary:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:title:nk]' value='Job Title' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#000000'>Avg. Salary:&#9;&lt;</run>
+                <run fontcolor='#000000'>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[avg:salary:qk]</run>
+                <run fontcolor='#000000'>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#55aaff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[avg:salary:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{376C852C-13FF-4D83-B239-52A539B28E3B}' />
+    </worksheet>
+    <worksheet name='Seasonality'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>H1B Visas per Day</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='H1B_Visas' name='federated.0knq32q0x7jajb1gkkk4d0quk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0knq32q0x7jajb1gkkk4d0quk5mb'>
+            <column caption='# of H1B Visas' datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[location - Split 2]' role='dimension' semantic-role='[State].[Name]' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[location]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [location], &quot;,&quot;, -1 ) )' />
+            </column>
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Company)]'>
+            <groupfilter function='level-members' level='[company]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Location)]'>
+            <groupfilter function='level-members' level='[location]' user:ui-action-filter='[Action7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (State)]'>
+            <groupfilter function='level-members' level='[location - Split 2]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Year)]'>
+            <groupfilter function='level-members' level='[year]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Year)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:year:ok]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (State)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Company)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Location)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[tdy:date:qk]' scope='cols' value='' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='title' class='0' field='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000'>&lt;</run>
+                <run bold='true' fontcolor='#000000'>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]</run>
+                <run bold='true' fontcolor='#000000'>&gt; H1B Visas submitted on &lt;</run>
+                <run bold='true' fontcolor='#000000'>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[tdy:date:qk]</run>
+                <run bold='true' fontcolor='#000000'>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]</rows>
+        <cols>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{BFDB97D6-CF95-4083-A76D-0FE37D2DC3C8}' />
+    </worksheet>
+    <worksheet name='Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>H1B Visas per Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='H1B_Visas' name='federated.0knq32q0x7jajb1gkkk4d0quk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0knq32q0x7jajb1gkkk4d0quk5mb'>
+            <column caption='# of H1B Visas' datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[location - Split 2]' role='dimension' semantic-role='[State].[Name]' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[location]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [location], &quot;,&quot;, -1 ) )' />
+            </column>
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Company)]'>
+            <groupfilter function='level-members' level='[company]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Location)]'>
+            <groupfilter function='level-members' level='[location]' user:ui-action-filter='[Action7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (State)]'>
+            <groupfilter function='level-members' level='[location - Split 2]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:year:ok]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (State)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Company)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Location)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[cnt:Number of Records:qk]' scope='rows' value='# of H1B Visas' />
+            <format attr='display' class='0' field='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[cnt:Number of Records:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:year:ok]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000'>&lt;</run>
+                <run bold='true' fontcolor='#000000'>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[cnt:Number of Records:qk]</run>
+                <run bold='true' fontcolor='#000000'>&gt; H1B Visas in &lt;</run>
+                <run bold='true' fontcolor='#000000'>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:year:ok]</run>
+                <run bold='true' fontcolor='#000000'>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[cnt:Number of Records:qk]</rows>
+        <cols>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:year:ok]</cols>
+      </table>
+      <simple-id uuid='{FDB61B81-57B9-487C-A33D-5F4EE155D3B2}' />
+    </worksheet>
+    <worksheet name='count'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'># of H1B Visas</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='H1B_Visas' name='federated.0knq32q0x7jajb1gkkk4d0quk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0knq32q0x7jajb1gkkk4d0quk5mb'>
+            <column caption='# of H1B Visas' datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[location - Split 2]' role='dimension' semantic-role='[State].[Name]' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[location]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [location], &quot;,&quot;, -1 ) )' />
+            </column>
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Company)]'>
+            <groupfilter function='level-members' level='[company]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Location)]'>
+            <groupfilter function='level-members' level='[location]' user:ui-action-filter='[Action7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (State)]'>
+            <groupfilter function='level-members' level='[location - Split 2]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Year)]'>
+            <groupfilter function='level-members' level='[year]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Year)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:year:ok]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (State)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Company)]</column>
+            <column>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[Action (Location)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#000000'>&lt;</run>
+                <run fontcolor='#000000'>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]</run>
+                <run fontcolor='#000000'>&gt; H1B Visas</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='auto' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#8cd17d' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{71F7DB2B-2198-4153-B0E0-C12C05EF90D3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='H1B_Visas' name='federated.0knq32q0x7jajb1gkkk4d0quk5mb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0knq32q0x7jajb1gkkk4d0quk5mb'>
+        <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+        <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='45813' id='11' param='horz' type='layout-flow' w='99034' x='483' y='7574'>
+            <zone h='45813' id='9' type='layout-basic' w='99034' x='483' y='7574'>
+              <zone h='45813' id='8' name='Map' show-title='false' w='58236' x='483' y='7574'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45813' id='21' layout-strategy-id='distribute-evenly' param='vert' type='layout-flow' w='40798' x='58719' y='7574'>
+                <zone h='22931' id='18' layout-strategy-id='distribute-evenly' param='horz' type='layout-flow' w='40796' x='58721' y='7577'>
+                  <zone h='22931' id='14' name='Salary' w='20398' x='58721' y='7577'>
+                    <layout-cache minheight='139' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='22931' id='7' name='count' w='20398' x='79119' y='7577'>
+                    <layout-cache minheight='139' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='22832' id='3' name='Year' w='40796' x='58721' y='30508'>
+                  <layout-cache cell-count-w='9' minheight='164' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='6776' id='16' param='horz' type='layout-flow' w='92638' x='6879' y='798'>
+            <zone forceUpdate='true' h='6776' id='17' type='text' w='76585' x='6879' y='798'>
+              <formatted-text>
+                <run bold='true' fontsize='18'>H-1B Visas in the US</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='258' h='6776' id='15' is-fixed='true' mode='checkdropdown' name='Salary' param='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:title:nk]' type='filter' w='16053' x='83464' y='798'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='45815' id='20' layout-strategy-id='distribute-evenly' param='horz' type='layout-flow' w='99034' x='483' y='53387'>
+            <zone h='45862' id='6' name='Companies' w='33011' x='483' y='53340'>
+              <layout-cache fixed-size-h='2796573' minwidth='240' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='45862' id='19' name='City' w='33012' x='33494' y='53340'>
+              <layout-cache type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='45862' id='5' name='Seasonality' w='33011' x='66506' y='53340'>
+              <layout-cache minwidth='169' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='6776' id='22' is-centered='0' is-scaled='1' param='C:/Users/Reyes/OneDrive - St. John&apos;s University/Summer 2019/Python/Python/H1bVisas/H1B visa.jpg' type='bitmap' url='https://www.path2usa.com/what-is-h1b-visa' w='6396' x='483' y='798'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98404' id='30' param='vert' type='layout-flow' w='99034' x='483' y='798'>
+                <zone fixed-size='47' h='6776' id='22' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/Reyes/OneDrive - St. John&apos;s University/Summer 2019/Python/Python/H1bVisas/H1B visa.jpg' type='bitmap' url='https://www.path2usa.com/what-is-h1b-visa' w='6396' x='483' y='798'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='6776' id='17' type='text' w='76585' x='6879' y='798'>
+                  <formatted-text>
+                    <run bold='true' fontsize='18'>H-1B Visas in the US</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45813' id='8' is-fixed='true' name='Map' show-title='false' w='58236' x='483' y='7574'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='258' h='6776' id='15' mode='checkdropdown' name='Salary' param='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:title:nk]' type='filter' w='16053' x='83464' y='798'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='175' h='22931' id='14' is-fixed='true' name='Salary' w='20398' x='58721' y='7577'>
+                  <layout-cache minheight='139' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='175' h='22931' id='7' is-fixed='true' name='count' w='20398' x='79119' y='7577'>
+                  <layout-cache minheight='139' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='175' h='22832' id='3' is-fixed='true' name='Year' w='40796' x='58721' y='30508'>
+                  <layout-cache cell-count-w='9' minheight='164' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45862' id='6' is-fixed='true' name='Companies' w='33011' x='483' y='53340'>
+                  <layout-cache fixed-size-h='2796573' minwidth='240' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45862' id='19' is-fixed='true' name='City' w='33012' x='33494' y='53340'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45862' id='5' is-fixed='true' name='Seasonality' w='33011' x='66506' y='53340'>
+                  <layout-cache minwidth='169' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{544785F7-A207-4DBA-B22D-7FF2DAE4B5C4}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='City' />
+        <viewpoint name='Companies' />
+        <viewpoint name='Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Salary'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Seasonality'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='count'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <node-selection select-tuples='false'>
+              <oriented-node-reference orientation='vertical'>
+                <node-reference>
+                  <axis>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]</axis>
+                </node-reference>
+                <page-reference />
+              </oriented-node-reference>
+            </node-selection>
+          </selection-collection>
+        </viewpoint>
+      </viewpoints>
+      <active id='7' />
+      <simple-id uuid='{64D09C25-1FE7-4DCC-9ABD-118997A8A876}' />
+    </window>
+    <window class='worksheet' hidden='true' name='City'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:location:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B2A4D98C-3B5E-495C-823D-4F940D2A4CEC}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Companies'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:company:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B8413108-2D3A-4904-BD9D-56E543E03116}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:location - Split 1:nk]</field>
+            <field>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:location - Split 2:nk]</field>
+            <field>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:location:nk]</field>
+            <field>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[sum:Number of Records:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6835F1E4-1C5E-4B7E-867E-A37E1E054247}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Salary'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:title:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F249924D-DCBF-4152-8E4E-DA9305B22ECF}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Seasonality'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[tdy:date:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B0C8AF16-41D3-4D3D-ADEF-0FB551C22155}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:year:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0knq32q0x7jajb1gkkk4d0quk5mb].[none:year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{60B15590-555A-4F93-8D8A-544A4B084904}' />
+    </window>
+    <window class='worksheet' hidden='true' name='count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{84825C89-335E-4381-A0B9-B41EE467814A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
